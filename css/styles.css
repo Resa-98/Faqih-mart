@@ -25,6 +25,10 @@
   --heading-font: "Montserrat", sans-serif;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
   font-family: var(--default-font);
@@ -45,7 +49,7 @@ body {
 .header .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 2rem;
 }
 .header .navbar a.logo {
@@ -126,6 +130,9 @@ body {
 .index-page.scrolled .menu-icon {
   color: #333;
 }
+.index-page.scrolled .shopping-cart {
+  color: #333;
+}
 
 /* header section start */
 
@@ -133,6 +140,11 @@ body {
   display: none;
   cursor: pointer;
   color: #fff;
+}
+.shopping-cart {
+  cursor: pointer;
+  color: #fff;
+  font-size: 29px;
 }
 
 /* header section end */
@@ -231,8 +243,17 @@ body {
     font-weight: 500;
     font-family: var(--font-family);
   }
+
   .menu-icon {
-    display: flex;
+    display: block;
+    font-size: 1.5rem;
+  }
+  .shopping-cart {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1.4rem;
+    right: 3rem;
+    z-index: 1001;
   }
   .navbar ul.hidden {
     display: none;
