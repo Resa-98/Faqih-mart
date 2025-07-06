@@ -11,14 +11,15 @@ document.addEventListener("scroll", toggleScrolled);
 const menuIcon = document.getElementById("menu-icon");
 const selectBody = document.querySelector("body");
 const menuList = document.getElementById("menu-list");
+const headerNav = document.querySelector("header");
 menuIcon.addEventListener("click", () => {
   const isHidden = menuList.classList.toggle("hidden");
 
-  if (!isHidden) {
-    selectBody.classList.add("scrolled");
-  } else {
-    if (window.scrollY < 110) {
-      selectBody.classList.remove("scrolled");
-    }
-  }
+  // if (!isHidden) {
+  //   selectBody.classList.add("scrolled");
+  // } else {
+  //   // if (window.scrollY < 110) {
+  //   //   selectBody.classList.remove("scrolled");
+  //   // }
+  // }
 });

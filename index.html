@@ -30,17 +30,20 @@
     <header id="header" class="header">
       <nav class="navbar">
         <a href="#home" class="logo">Faqih<span>M</span>art</a>
-        <div id="menu-icon" class="menu-icon">
-          <i data-feather="menu"></i>
-        </div>
+
         <ul id="menu-list" class="hidden">
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
           <li><a href="#products">Produk</a></li>
           <li><a href="contact">Kontak</a></li>
         </ul>
-        <div class="shopping-cart">
-          <li><i data-feather="shopping-cart"></i></li>
+        <div class="container-menu">
+          <div class="shopping-cart">
+            <li><i data-feather="shopping-cart"></i></li>
+          </div>
+          <div id="menu-icon" class="menu-icon">
+            <i data-feather="menu"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -48,9 +51,20 @@
       <section id="home" class="hero">
         <img src="assets/img/hero-image.jpg" alt="hero-image" />
         <div class="container">
-          <h2>Selamat datang di Faqih Mart</h2>
+          <h2 class="h2_hero">
+            Selamat datang di <span class="h2_hero-1">F</span
+            ><span class="h2_hero-2">aqih</span><span class="h2_hero-1">M</span
+            ><span class="h2_hero-2">art</span>
+          </h2>
           <p>"Belanja mudah, murah, dan dekat rumah!"</p>
-          <button type="submit">Pesan Sekarang!</button>
+          <button type="submit">
+            <a
+              href="https://wa.me/6289507559445?text=Halo%20Faqih%20Mart,%20saya%20ingin%20pesan%20produk!"
+              target="_blank"
+              class="cta-btn"
+              >Pesan Sekarang!</a
+            >
+          </button>
         </div>
       </section>
 
