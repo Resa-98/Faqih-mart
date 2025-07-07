@@ -46,3 +46,76 @@ document.addEventListener("click", function (e) {
     selectBody.classList.remove("scrolled");
   }
 });
+
+// modal produk
+
+const brandData = {
+  unilever: [
+    {
+      nama: "Kecap Bango 200ml",
+      gambar: "assets/img/produk/kecapbango.jpg",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Kecap%20Bango.",
+    },
+    {
+      nama: "Lifebuoy sabun batang",
+      gambar: "assets/img/produk/lifebuoy.png",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebouy.",
+    },
+  ],
+};
+
+// ========================
+// LOGIKA MODAL PRODUK
+// ========================
+const brandLogos = document.querySelectorAll(".brand-logo");
+const modal = document.getElementById("brandModal");
+const brandTitle = document.getElementById("brandTitle");
+const brandProducts = document.getElementById("brandProducts");
+const closeButton = document.querySelector(".close-button");
+
+brandLogos.forEach((logo) => {
+  logo.addEventListener("click", () => {
+    const brandKey = logo.getAttribute("data-brand");
+
+    const produkList = brandData[brandKey];
+
+    // Format judul: kapitalisasi
+    const namaBrandTampil = brandKey
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (l) => l.toUpperCase());
+
+    brandTitle.textContent = `Produk ${namaBrandTampil}`;
+
+    // Tampilkan daftar produk
+    brandProducts.innerHTML =
+      produkList && produkList.length > 0
+        ? produkList
+            .map(
+              (p) => `
+          <div class="produk-item">
+            <img src="${p.gambar}" alt="${p.nama}" />
+            <div class="info">
+              <h4>${p.nama}</h4>
+            </div>
+            <a href="${p.wa}" target="_blank">Beli</a>
+          </div>
+        `
+            )
+            .join("")
+        : "<p>Produk belum tersedia.</p>";
+
+    modal.classList.remove("hidden");
+  });
+});
+
+// Tutup modal saat klik tombol ×
+closeButton.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+// Tutup modal jika klik di luar konten modal
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
