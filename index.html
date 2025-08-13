@@ -151,49 +151,101 @@
           </div>
         </div>
       </section>
-
-      <section id="products">
-        <h2>Produk Kami</h2>
-        <div class="product-list">
-          <div class="product-item">
-            <h3>Sembako</h3>
-            <p>
-              Description of Product 1. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Saepe ullam ea nesciunt, necessitatibus illo,
-              modi veritatis similique distinctio, repellendus dolorem nobis
-              temporibus sint. Saepe deleniti odio dolor iure repellat autem
-              distinctio tenetur, commodi placeat deserunt expedita, sapiente
-              blanditiis sed et.
-            </p>
-          </div>
-
-          <div class="product-item">
-            <h3>Sabun Mandi</h3>
-            <p>
-              Description of Product 2 Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Sapiente eos dolore ea, culpa nam atque itaque
-              unde molestias similique maiores in accusantium quod optio
-              provident ut nesciunt sint minus quos facilis ad architecto.
-              Pariatur quasi deleniti aut ad rerum molestiae accusamus fugiat
-              ipsam numquam eos praesentium, rem eum iste delectus!
-            </p>
-          </div>
-          <div class="product-item">
-            <h3>Kebutuhan Dapur</h3>
-            <p>
-              Description of Product 2. Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Dolorem, aliquam mollitia est earum voluptatibus
-              explicabo voluptatem facilis esse, aspernatur exercitationem
-              repellat voluptatum! Suscipit delectus ipsum accusantium ab porro
-              quidem? Facere eligendi quae exercitationem voluptate quam
-              delectus minus et aperiam odio voluptas, quia, possimus at sunt ab
-              architecto necessitatibus aliquam adipisci!
-            </p>
-          </div>
+    </main>
+    <!-- Produk -->
+    <section id="products">
+      <h2>Produk Kami</h2>
+      <div class="product-list">
+        <div class="product-card" data-kategori="sembako">
+          <img
+            src="assets/img/produk/minyak-sunco-1l.jpg"
+            alt="Minyak Sunco 1L"
+          />
+          <h3>Minyak Sunco 1L</h3>
+          <p class="harga">Rp 18.000</p>
+          <a
+            href="https://wa.me/6289507559445?text=Halo%20Faqih%20Mart,%20saya%20ingin%20pesan%20Minyak%20Sunco%201L"
+            class="btn-beli"
+            >Beli</a
+          >
         </div>
-      </section>
 
-      <section id="about">
+        <div class="product-card" data-kategori="sabun">
+          <img
+            src="assets/img/produk/lifebuoy.png"
+            alt="Lifebuoy Sabun Mandi"
+          />
+          <h3>Lifebuoy Sabun Mandi</h3>
+          <p class="harga">Rp 4.500</p>
+          <a
+            href="https://wa.me/6289507559445?text=Halo%20Faqih%20Mart,%20saya%20ingin%20pesan%20Lifebuoy"
+            class="btn-beli"
+            >Beli</a
+          >
+        </div>
+
+        <div class="product-card" data-kategori="dapur">
+          <img src="assets/img/produk/berassania.png" alt="Beras Sania 5kg" />
+          <h3>Beras Sania 5kg</h3>
+          <p class="harga">Rp 65.000</p>
+          <a
+            href="https://wa.me/6289507559445?text=Halo%20Faqih%20Mart,%20saya%20ingin%20pesan%20Beras%20Sania%205kg"
+            class="btn-beli"
+            >Beli</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about">
+      <h2>Tentang Kami</h2>
+      <div class="about-content">
+        <img src="assets/img/toko.jpg" alt="Foto Toko Faqih Mart" />
+        <p>
+          Faqih Mart adalah toko sembako dan kebutuhan rumah tangga yang
+          berlokasi di Cikarang Utara. Kami menyediakan berbagai produk
+          berkualitas dengan harga terjangkau, mulai dari minyak goreng, sabun
+          mandi, hingga kebutuhan dapur. Pengiriman dilakukan setiap hari ke
+          area GCC, PNR, PCH, dan sekitarnya.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <div class="contact-content">
+        <p>Hubungi kami untuk pemesanan atau pertanyaan:</p>
+        <a href="https://wa.me/6289507559445" class="btn-wa" target="_blank"
+          >Chat via WhatsApp</a
+        >
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!..."
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Faqih Mart. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#"><i data-feather="facebook"></i></a>
+          <a href="#"><i data-feather="instagram"></i></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <section id="about">
         <h2>Tentang Kami</h2>
         <div class="profile-image">
           <img src="" alt="profile-image" />
@@ -221,7 +273,7 @@
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
-    </footer>
+    </footer> -->
 
     <script>
       feather.replace();

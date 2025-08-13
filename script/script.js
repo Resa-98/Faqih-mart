@@ -47,6 +47,10 @@ document.addEventListener("click", function (e) {
   }
 });
 
+const shoppingCart = document.querySelector(".shopping-cart");
+shoppingCart.addEventListener("click", () => {
+  alert("Fitur belum tersedia!");
+});
 // modal produk
 
 const brandData = {
@@ -59,14 +63,11 @@ const brandData = {
     {
       nama: "Lifebuoy sabun batang",
       gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebouy.",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
     },
   ],
 };
 
-// ========================
-// LOGIKA MODAL PRODUK
-// ========================
 const brandLogos = document.querySelectorAll(".brand-logo");
 const modal = document.getElementById("brandModal");
 const brandTitle = document.getElementById("brandTitle");
@@ -105,17 +106,16 @@ brandLogos.forEach((logo) => {
         : "<p>Produk belum tersedia.</p>";
 
     modal.classList.remove("hidden");
+
+    // Blokir scroll saat modal terbuka
+    document.body.style.overflow = "hidden";
   });
 });
 
-// Tutup modal saat klik tombol ×
+// Tutup modal hanya lewat tombol ×
 closeButton.addEventListener("click", () => {
   modal.classList.add("hidden");
-});
 
-// Tutup modal jika klik di luar konten modal
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.add("hidden");
-  }
+  // Aktifkan scroll kembali
+  document.body.style.overflow = "auto";
 });
