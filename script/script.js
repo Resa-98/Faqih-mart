@@ -65,6 +65,26 @@ const brandData = {
       gambar: "assets/img/produk/lifebuoy.png",
       wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
     },
+    {
+      nama: "Lifebuoy sabun cair",
+      gambar: "assets/img/produk/lifebuoy.png",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
+    },
+    {
+      nama: "Lifebuoy sabun batang",
+      gambar: "assets/img/produk/lifebuoy.png",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
+    },
+    {
+      nama: "Lifebuoy sabun batang",
+      gambar: "assets/img/produk/lifebuoy.png",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
+    },
+    {
+      nama: "Lifebuoy sabun batang",
+      gambar: "assets/img/produk/lifebuoy.png",
+      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
+    },
   ],
 };
 
