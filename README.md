@@ -15,13 +15,13 @@ Integrasi pembelian langsung melalui **WhatsApp**.
 
 ---
 
-``` ## 📂 Struktur Project
+```## 📂 Struktur Project
 📦 faqih-mart
 ┣ 📂 assets
 ┃ ┣ 📂 images # Semua gambar produk/brand
 ┃ ┣ 📂 css # File CSS
 ┃ ┗ 📂 js # File JavaScript
-┗ README.md # Dokumentasi project ```
+┗ README.md # Dokumentasi project```
 
 
 📌 Catatan
