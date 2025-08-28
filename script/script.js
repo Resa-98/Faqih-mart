@@ -51,91 +51,30 @@ const shoppingCart = document.querySelector(".shopping-cart");
 shoppingCart.addEventListener("click", () => {
   alert("Fitur belum tersedia!");
 });
-// modal produk
 
-const brandData = {
-  unilever: [
-    {
-      nama: "Kecap Bango 200ml",
-      gambar: "assets/img/produk/kecapbango.jpg",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Kecap%20Bango.",
-    },
-    {
-      nama: "Lifebuoy sabun batang",
-      gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
-    },
-    {
-      nama: "Lifebuoy sabun cair",
-      gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
-    },
-    {
-      nama: "Lifebuoy sabun batang",
-      gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
-    },
-    {
-      nama: "Lifebuoy sabun batang",
-      gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
-    },
-    {
-      nama: "Lifebuoy sabun batang",
-      gambar: "assets/img/produk/lifebuoy.png",
-      wa: "https://wa.me/6289507559445?text=Saya%20mau%20pesan%20Lifebuoy.",
-    },
-  ],
-};
 
-const brandLogos = document.querySelectorAll(".brand-logo");
-const modal = document.getElementById("brandModal");
-const brandTitle = document.getElementById("brandTitle");
-const brandProducts = document.getElementById("brandProducts");
-const closeButton = document.querySelector(".close-button");
 
-brandLogos.forEach((logo) => {
-  logo.addEventListener("click", () => {
-    const brandKey = logo.getAttribute("data-brand");
 
-    const produkList = brandData[brandKey];
 
-    // Format judul: kapitalisasi
-    const namaBrandTampil = brandKey
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (l) => l.toUpperCase());
 
-    brandTitle.textContent = `Produk ${namaBrandTampil}`;
 
-    // Tampilkan daftar produk
-    brandProducts.innerHTML =
-      produkList && produkList.length > 0
-        ? produkList
-            .map(
-              (p) => `
-          <div class="produk-item">
-            <img src="${p.gambar}" alt="${p.nama}" />
-            <div class="info">
-              <h4>${p.nama}</h4>
-            </div>
-            <a href="${p.wa}" target="_blank">Beli</a>
-          </div>
-        `
-            )
-            .join("")
-        : "<p>Produk belum tersedia.</p>";
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".category_product_card");
 
-    modal.classList.remove("hidden");
+  cards.forEach(card => {
+    const btn = card.querySelector(".desc-btn");
+    const dropdown = card.querySelector(".dropdown-content");
+    const title = card.querySelector(".card-title");
+    btn.addEventListener("click", () => {
+      dropdown.classList.toggle("active");
 
-    // Blokir scroll saat modal terbuka
-    document.body.style.overflow = "hidden";
+      if (dropdown.classList.contains("active")) {
+        btn.textContent = "Tutup Deskripsi ▲";
+        title.scrollIntoView({ behavior: "smooth", block: "center"});
+      } else {
+        btn.textContent = "Lihat Deskripsi ▼";
+      }
+    });
   });
 });
 
-// Tutup modal hanya lewat tombol ×
-closeButton.addEventListener("click", () => {
-  modal.classList.add("hidden");
-
-  // Aktifkan scroll kembali
-  document.body.style.overflow = "auto";
-});
