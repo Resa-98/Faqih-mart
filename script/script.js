@@ -52,12 +52,7 @@ shoppingCart.addEventListener("click", () => {
   alert("Fitur belum tersedia!");
 });
 
-
-
-
-
-
-
+// Mengatur Accordion pada category card product
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".category_product_card");
 
