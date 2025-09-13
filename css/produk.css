@@ -1,0 +1,90 @@
+main {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000000;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(26, 26, 26, 0.1);
+}
+.header {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 9px rgba(3, 163, 212, 0.691),
+    1px 2px 5px rgba(246, 201, 0, 0.691);
+}
+
+.navbar ul li a {
+  color: #333;
+}
+.navbar .shopping-cart,
+.menu-icon {
+  color: #333;
+}
+
+/* Grid produk */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #504f4f;
+}
+.product-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #4f4f4f;
+  background: #ffeda545;
+  padding: 5px;
+  font-weight: bold;
+}
+button {
+  background: #f0f0f0;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 15px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+button,
+a {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.1s;
+  text-decoration: none;
+  color: #000;
+}
+button:hover {
+  background: #03a3d4;
+  color: #fff;
+}

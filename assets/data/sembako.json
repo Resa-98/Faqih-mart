@@ -1,0 +1,113 @@
+{
+  "sembako": [
+    {
+      "id": 1,
+      "nama": "Kecap bango 520ml",
+      "harga": 22000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kecapbango-520ml.jpg"
+    },
+    {
+      "id": 2,
+      "nama": "Minyak Sunco 2L",
+      "harga": 39000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-sunco-2L.jpg"
+    },
+    {
+      "id": 3,
+      "nama": "Minyak Sunco 1L",
+      "harga": 20000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-sunco-1L.jpg"
+    },
+    {
+      "id": 4,
+      "nama": "Beras Sania 5kg",
+      "harga": 78000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/beras-sania-5kg.jpg"
+    },
+    {
+      "id": 5,
+      "nama": "Beras Lahap 5kg",
+      "harga": 82000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/beras-lahap-5kg.jpg"
+    },
+    {
+      "id": 6,
+      "nama": "Minyak Sania 1L",
+      "harga": 19000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-sania-1L.jpg"
+    },
+    {
+      "id": 7,
+      "nama": "Minyak Sania 2L",
+      "harga": 39000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-sania-2L.jpg"
+    },
+    {
+      "id": 8,
+      "nama": "Minyak Filma 1L",
+      "harga": 19000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-filma-1L.jpg"
+    },
+    {
+      "id": 9,
+      "nama": "Minyak Filma 2L",
+      "harga": 39000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/minyak-filma-2L.jpg"
+    },
+    {
+      "id": 10,
+      "nama": "Gula GMP 1kg",
+      "harga": 18000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/gula-gmp.jpg"
+    },
+    {
+      "id": 11,
+      "nama": "GulaKu 1kg",
+      "harga": 18000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/gula-ku.jpg"
+    },
+    {
+      "id": 12,
+      "nama": "Gula RoseBrand 1kg",
+      "harga": 18000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/gula-rosebrand.jpg"
+    }
+  ],
+  "bodycare": [
+    {
+      "id": 3,
+      "nama": "Sabun Lifebuoy 90gr",
+      "harga": 4500,
+      "kategori": "bodycare",
+      "gambar": "assets/img/produk/lifebuoy.jpg"
+    },
+    {
+      "id": 4,
+      "nama": "Shampoo Sunsilk 170ml",
+      "harga": 22000,
+      "kategori": "bodycare",
+      "gambar": "assets/img/produk/sunsilk.jpg"
+    }
+  ],
+  "homecare": [
+    {
+      "id": 5,
+      "nama": "Sunlight 780ml",
+      "harga": 15000,
+      "kategori": "homecare",
+      "gambar": "assets/img/produk/sunlight.jpg"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "sembako": [
+    {
+      "id": 1,
+      "nama": "Kecap Bango 520ml",
+      "harga": 75000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kecapbango-520ml.jpg"
+    },
+    {
+      "id": 2,
+      "nama": "Minyak Sunco 1L",
+      "harga": 18000,
+      "kategori": "sembako",
+      "gambar": "assets/img/produk/sunco.png"
+    }
+  ],
+  "bodycare": [
+    {
+      "id": 3,
+      "nama": "Sabun Lifebuoy 90gr",
+      "harga": 4500,
+      "kategori": "bodycare",
+      "gambar": "assets/img/produk/lifebuoy.jpg"
+    },
+    {
+      "id": 4,
+      "nama": "Shampoo Sunsilk 170ml",
+      "harga": 22000,
+      "kategori": "bodycare",
+      "gambar": "assets/img/produk/sunsilk.jpg"
+    }
+  ],
+  "homecare": [
+    {
+      "id": 5,
+      "nama": "Sunlight 780ml",
+      "harga": 15000,
+      "kategori": "homecare",
+      "gambar": "assets/img/produk/sunlight.jpg"
+    }
+  ]
+}
