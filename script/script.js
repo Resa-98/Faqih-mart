@@ -47,16 +47,16 @@ document.addEventListener("click", function (e) {
   }
 });
 
-const shoppingCart = document.querySelector(".shopping-cart");
-shoppingCart.addEventListener("click", () => {
-  alert("Fitur belum tersedia!");
-});
+// const shoppingCart = document.querySelector(".shopping-cart");
+// shoppingCart.addEventListener("click", () => {
+//   alert("Fitur belum tersedia!");
+// });
 
 // Mengatur Accordion pada category card product
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".category_product_card");
 
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const btn = card.querySelector(".desc-btn");
     const dropdown = card.querySelector(".dropdown-content");
     const title = card.querySelector(".card-title");
@@ -65,11 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (dropdown.classList.contains("active")) {
         btn.textContent = "Tutup Deskripsi ▲";
-        title.scrollIntoView({ behavior: "smooth", block: "center"});
+        title.scrollIntoView({ behavior: "smooth", block: "center" });
       } else {
         btn.textContent = "Lihat Deskripsi ▼";
       }
     });
   });
 });
-

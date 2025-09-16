@@ -63,8 +63,9 @@
           <li><a href="contact">Kontak</a></li>
         </ul>
         <div class="container-menu">
-          <div class="shopping-cart">
-            <li><i data-feather="shopping-cart"></i></li>
+          <div class="shopping-cart" id="cart-" >
+            <i data-feather="shopping-cart"></i>
+            <span id="cart-count">0</span>
           </div>
           <div id="menu-icon" class="menu-icon">
             <i data-feather="menu"></i>
@@ -75,8 +76,19 @@
     <main>
       <h1>Produk Sembako</h1>
       <div id="product-list" class="product-grid"></div>
+       <!-- Modal Cart -->
+  <div id="cart-modal" class="cart-modal">
+  <div class="cart-content">
+    <span id="close-cart" class="close-btn">&times;</span>
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: Rp 0</p>
+    <button id="checkout-btn">Checkout via WhatsApp</button>
+  </div>
+</div>
     </main>
 
+    
     <footer>
       <div class="footer-content">
         <p>&copy; 2025 Faqih Mart. All Rights Reserved.</p>

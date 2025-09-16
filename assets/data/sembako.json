@@ -83,24 +83,79 @@
       "harga": 18000,
       "kategori": "sembako",
       "gambar": "assets/img/kategori-produk/sembako/gula-rosebrand.jpg"
-    }
-  ],
-  "bodycare": [
-    {
-      "id": 3,
-      "nama": "Sabun Lifebuoy 90gr",
-      "harga": 4500,
-      "kategori": "bodycare",
-      "gambar": "assets/img/produk/lifebuoy.jpg"
     },
     {
-      "id": 4,
-      "nama": "Shampoo Sunsilk 170ml",
-      "harga": 22000,
-      "kategori": "bodycare",
-      "gambar": "assets/img/produk/sunsilk.jpg"
+      "id": 13,
+      "nama": "Indomie Goreng",
+      "harga": 16000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/indomie-goreng.jpg"
+    },
+    {
+      "id": 14,
+      "nama": "Indomie Soto",
+      "harga": 16000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/indomie-soto.jpg"
+    },
+    {
+      "id": 15,
+      "nama": "Kapal Api Special Mix",
+      "harga": 17000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kapal-api.jpg"
+    },
+    {
+      "id": 16,
+      "nama": "Kopi ABC Susu",
+      "harga": 17000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-abc.jpg"
+    },
+    {
+      "id": 17,
+      "nama": "Kopi Goodday Cappucino",
+      "harga": 21000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-gooday-capu.jpg"
+    },
+    {
+      "id": 18,
+      "nama": "Kopi Goodday Moccacino",
+      "harga": 15000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-gooday-moca.jpg"
+    },
+    {
+      "id": 19,
+      "nama": "Kopi Goodday Freeze",
+      "harga": 23000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-gooday-freeze.jpg"
+    },
+    {
+      "id":20,
+      "nama": "Kopi Indocafe",
+      "harga": 15000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-indocafe.jpg"
+    },
+    {
+      "id": 21,
+      "nama": "Kopi Luwak White Coffee",
+      "harga": 15000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/kopi-luwak.jpg"
+    },
+    {
+      "id": 22,
+      "nama": "Saos Sambal Indofood 335ml",
+      "harga": 13000,
+      "kategori": "sembako",
+      "gambar": "assets/img/kategori-produk/sembako/saos-indofood-335ml.jpg"
     }
   ],
+
   "homecare": [
     {
       "id": 5,
