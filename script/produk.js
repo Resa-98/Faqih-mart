@@ -24,7 +24,7 @@ function renderProducts(products) {
 loadCategory("sembako");
 
 document.addEventListener("DOMContentLoaded", () => {
-  const cartIcon = document.querySelector(".shopping-cart"); 
+  const cartIcon = document.querySelector(".shopping-cart");
   const cartModal = document.getElementById("cart-modal");
   const closeCart = document.getElementById("close-cart");
 
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 
 let cart = [];
 function addToCart(id, nama, harga) {
