@@ -12,7 +12,7 @@ function renderProducts(products) {
   products.forEach((p) => {
     container.innerHTML += `
           <div class="product-card">
-            <img src="${p.gambar}" alt="${p.nama}">
+            <img src="${p.gambar}" alt="${p.nama}" loading="lazy">
             <h3>${p.nama}</h3>
             <p>Rp ${p.harga.toLocaleString("id-ID")}</p>
           <button onclick="addToCart(${p.id}, '${p.nama}', ${p.harga})"> 
@@ -93,3 +93,4 @@ document.getElementById("checkout-btn").addEventListener("click", () => {
   )}`;
   window.open(waUrl, "_blank");
 });
+

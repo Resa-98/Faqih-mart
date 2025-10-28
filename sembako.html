@@ -10,7 +10,7 @@
     <meta property="og:title" content="Faqih Mart - Belanja Kebutuhan Harian" />
     <meta
       property="og:description"
-      content="Toko Online Faqih Mart menyediakan pilihan sembako, body care, dan home care. Pengiriman setiap hari!"
+      content="Toko Online Faqih Mart menyediakan pilihan sembako, body care, dan home care. Pengiriman setiap hari"
     />
     <meta property="og:url" content="https://resa-98.github.io/Faqih-mart/" />
     <meta
@@ -18,22 +18,9 @@
       content="https://resa-98.github.io/Faqih-mart/assets/img/hero-image.jpg"
     />
      <meta property="og:type" content="website" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/produk.css" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-       <link
+
+     <!-- Pavicon -->
+     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/apple-touch-icon.png"
@@ -50,25 +37,53 @@
       sizes="16x16"
       href="assets/favicon-16x16.png"
     />
-    
+    <link rel="manifest" href="/site.webmanifest" />
+       <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- my own styles -->
+    <link rel="stylesheet" href="css/global.css" />
+      <link rel="stylesheet" href="css/modal-cart.css" />
+    <link rel="stylesheet" href="css/produk.css" />
+  
+     <!-- feather icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <header id="header" class="header">
-      <nav class="navbar">
+    <header id="header" class="header-product">
+      <nav class="navbar-product">
         <a href="#home" class="logo">Faqih<span>M</span>art</a>
-
         <ul id="menu-list" class="hidden">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="sembako.html">Produk</a></li>
+           <li>
+            <a href="#categories" class="dropdown-toggle">Produk ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="sembako.html">Sembako</a></li>
+              <li>
+                <a href="#kebutuhan-rumah-tangga">Kebutuhan Rumah Tangga</a>
+              </li>
+              <li><a href="#bodycare">Bodycare</a></li>
+            </ul>
+          </li>
           <li><a href="contact">Kontak</a></li>
         </ul>
-        <div class="container-menu">
-          <div class="shopping-cart" id="cart-" >
+        <div class="container-menu-product">
+          <div class="shopping-cart-product" id="cart-icon" >
             <i data-feather="shopping-cart"></i>
             <span id="cart-count">0</span>
           </div>
-          <div id="menu-icon" class="menu-icon">
+          <div id="menu-icon" class="menu-icon-product">
             <i data-feather="menu"></i>
           </div>
         </div>
@@ -88,8 +103,6 @@
   </div>
 </div>
     </main>
-
-    
     <footer>
       <div class="footer-content">
         <p>&copy; 2025 Faqih Mart. All Rights Reserved.</p>
@@ -100,11 +113,12 @@
         </div>
       </div>
     </footer>
-    <script src="https://unpkg.com/feather-icons"></script>
     <script>
       feather.replace();
     </script>
-    <script src="script/script.js" defer></script>
-    <script src="script/produk.js" defer></script>
+    <script src="script/main.js"></script>
+    <script src="script/cart.js"></script>
+    <script src="script/produk.js"></script>
+    
   </bodyi>
 </html>
