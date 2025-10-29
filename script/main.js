@@ -44,7 +44,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
 // Mengatur Accordion pada category card product
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".category_product_card");
