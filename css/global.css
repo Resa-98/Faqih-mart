@@ -657,10 +657,15 @@ footer {
 }
   #menu-list.hidden {
     display: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
   #menu-list:not(.hidden) {
     display: flex;
+      opacity: 1;
+    transform: translateY(0);
   }
  header .navbar #menu-list {
    flex-direction: column;
