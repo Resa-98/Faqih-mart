@@ -92,6 +92,7 @@ header .navbar ul li ul {
   background-color: var(--background-color);
   transform: translateY(10px);
   transition: all 0.3s ease;
+
 }
 header .navbar ul li ul li {
   width: 100%;
@@ -631,7 +632,17 @@ footer {
 
 /* media queries */
 @media (max-width: 792px) {
-  
+ body.menu-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 90;
+    pointer-events: none;
+    transition: backdrop-filter 0.3s ease, background 0.3s ease;
+  }
+
   header {
     padding: 10px 2%;
   }
@@ -656,7 +667,7 @@ footer {
     background-color: var(--background-color);
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 0px;
     width: 55%;
     min-height:100vh;
     text-align: center;

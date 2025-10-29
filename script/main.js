@@ -1,26 +1,49 @@
-const selectBody = document.querySelector("body");
+const body = document.body;
 const menuIcon = document.getElementById("menu-icon");
 const menuList = document.getElementById("menu-list");
 
-function toggleScrolled() {
-  if (window.scrollY > 1) {
-    selectBody.classList.add("scrolled");
-  } else if (!menuList.classList.contains("hidden")) {
-    // Jika menu terbuka, tetap beri tema
-    selectBody.classList.add("scrolled");
+function updateTheme() {
+  const isScrolled = window.scrollY > 1;
+  const isMenuOpen = !menuList.classList.contains("hidden");
+
+  if (isScrolled || isMenuOpen) {
+    body.classList.add("scrolled");
   } else {
-    // Jika menu tertutup dan posisi top → kembalikan normal
-    selectBody.classList.remove("scrolled");
+    body.classList.remove("scrolled");
   }
 }
 
-document.addEventListener("scroll", toggleScrolled);
+document.addEventListener("scroll", updateTheme);
 
-// toggle menu & theme saat menu diklik
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
-  toggleScrolled(); // panggil ulang fungsi untuk sinkronisasi state
+  body.classList.toggle("menu-open"); // aktifkan blur di mobile
+  updateTheme();
 });
+
+// Tutup menu saat klik link
+document.querySelectorAll("#menu-list a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuList.classList.add("hidden");
+    body.classList.remove("menu-open");
+    updateTheme();
+  });
+});
+
+// Tutup menu saat klik di luar menu dan ikon
+document.addEventListener("click", (e) => {
+  const isClickInsideMenu = menuList.contains(e.target);
+  const isClickOnMenuIcon = menuIcon.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnMenuIcon) {
+    if (!menuList.classList.contains("hidden")) {
+      menuList.classList.add("hidden");
+      body.classList.remove("menu-open");
+      updateTheme();
+    }
+  }
+});
+
 
 // Mengatur Accordion pada category card product
 document.addEventListener("DOMContentLoaded", () => {
